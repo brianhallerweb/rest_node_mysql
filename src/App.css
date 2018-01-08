@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #3b5998;
+  color: white;
+  padding: 65px 0px 90px 0px;
+  margin-bottom: 40px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "addDog showDog"
+    "chooseDog choosenDog"
+    "updateDog updateDog"
+    "deleteDog deleteDog";
+  grid-row-gap: 100px;
+  justify-items: center;
+}
+
+.addDog {
+  grid-area: addDog;
+}
+
+.addDog h4 {
+  margin-bottom: 20px;
+}
+
+.showDogs {
+  grid-area: showDog;
+}
+
+.showDogs h4 {
+  margin-bottom: 20px;
+}
+
+.chooseDog {
+  grid-area: chooseDog;
+}
+
+.chooseDog h4 {
+  margin-bottom: 20px;
+}
+
+.choosenDog {
+  grid-area: choosenDog;
+}
+
+.choosenDog h4 {
+  margin-bottom: 20px;
+}
+
+.updateDog {
+  grid-area: updateDog;
+}
+
+.updateDog h4 {
+  margin-bottom: 20px;
+}
+
+.deleteDog {
+  grid-area: deleteDog;
+}
+
+.deleteDog h4 {
+  margin-bottom: 20px;
+}
